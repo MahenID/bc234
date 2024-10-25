@@ -1,0 +1,23 @@
+h1 {
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+}
+body {
+  background-color: rgb(90, 150, 250);
+}
+main {
+  border: 1px solid #954;
+  border-radius: 6px;
+  padding: 10px;
+}
+#pertama {
+  text-align: justify;
+  font-family: Arial, sans-serif;
+}
+.biru {
+  color: #124589;
+}
+.coret {
+  text-decoration: line-through;
+}
