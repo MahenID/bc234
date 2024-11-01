@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  padding: 0;
+  font-family: Nunito;
+  width: 800px;
+  margin: auto;
+  background-color: #d0d7df;
+}
+
+header,
+footer {
+  background-color: #346;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: Itim;
+  font-size: 36pt;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: #fab;
+  font-style: italic;
+}
+
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+  font-style: normal;
+}
+
+footer {
+  text-align: center;
+}
+
+nav {
+  width: 250px;
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #301;
+  border-bottom: 1px dotted #789;
+}
+ nav a:hover {
+  background-color: #346;
+  color: #fff;
+  border-right: 4px solid #fff;
+  border-left: 4px solid #d0d7df;
+ }
+
+article {
+  background-color: #abc;
+}
+
+article > * {
+  background-color: #fff;
+  margin-left: 250px;
+  padding: 10px;
+  text-align: justify;
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 30px;
+  border-top: 1px dashed #abc;
+}
+
+#sec02 figure {
+  float: left;
+  margin: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+#sec02 figure img {
+  height: 170px;
+}
+
+#sec04 table {
+  border-collapse: collapse;
+}
+
+#sec04 table th,
+#sec04 table td {
+  border: 1px solid #abc;
+  padding: 10px;
+}
+
+#sec04 table p {
+  margin: 0;
+}
+
+#sec04 table thead {
+  background-color: #346;
+  color: #fff;
+}
+
+#sec04 table tr:hover {
+  background-color: #f8faff ;
+}
