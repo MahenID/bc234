@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+header {
+  background-image: url("wallpaper.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 20px;
+}
+
+header h1 {
+  padding-top: 200px;
+}
+
+header a {
+  text-decoration: none;
+  color: #9cf;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #000;
+  text-align: center;
+  box-shadow: 0 5px 10px #111;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav a,
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+  color: #fff;
+}
+
+section p {
+  margin: 20px 0;
+}
+
+#sec00 {
+  padding: 100px;
+  text-align: center;
+}
+
+#sec01 {
+  background-image: url("wallpaper2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px;
+  text-align: center;
+}
+
+#sec02 {
+  padding: 100px;
+  text-align: center;
+  background-color: #fed;
+  color: #012;
+}
+
+#sec02 figure {
+  float: right;
+  margin-top: 50px;
+}
+
+#sec03 {
+  background-image: url("wallpaper3.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px;
+  text-align: center;
+  color: #210;
+}
+
+#sec04 {
+  padding: 100px;
+  text-align: center;
+}
+
+#sec04 table {
+  border-collapse: collapse;
+}
+
+#sec04 table th,
+#sec04 table td {
+  border: 1px solid #999;
+  padding: 20px;
+  text-align: justify;
+}
+
+#sec05 {
+  background-image: url("wallpaper.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px;
+  text-align: justify;
+}
+
+#sec05 li {
+  padding: 10px 0;
+}
+
+footer {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}

@@ -40,7 +40,7 @@ footer {
 
 nav {
   width: 250px;
-  float: left;
+  float: right;
 }
 
 nav ul {
@@ -58,8 +58,8 @@ nav a {
  nav a:hover {
   background-color: #346;
   color: #fff;
-  border-right: 4px solid #fff;
-  border-left: 4px solid #d0d7df;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #d0d7df;
  }
 
 article {
@@ -68,7 +68,7 @@ article {
 
 article > * {
   background-color: #fff;
-  margin-left: 250px;
+  margin-right: 250px;
   padding: 10px;
   text-align: justify;
 }
