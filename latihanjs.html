@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan JavaScript</title>
+</head>
+<body>
+  <header>
+    <h1>Latihan JS</h1>
+  </header>
+  <main>
+    <section>
+      <input oninput="salam(this.value)" type="text" placeholder="Tuliskan nama anda" autofocus>
+      <h2 id="output"></h2>
+    </section>
+  </main>
+  <script>
+    function salam(nama) {
+      // variable
+      // let output = document.getElementById('output');
+
+      // if(nama.trim() != '') output.innerText = 'Selamat Pagi, ' + nama;
+      // else output.innerText = '';
+    
+      document.getElementById('output').innerText = nama.trim() != '' ? 'Selamat Pagi, ' + nama : '';
+
+    }
+
+    // alert('Selamat Pagi');
+  </script>
+</body>
+</html>
