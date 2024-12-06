@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan DOM</title>
+  <style>
+    p {text-align: justify;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Latihan DOM</h1>
+  </header>
+  <main>
+    <section>
+      <div>
+        <span>Rotate</span>
+        <input type="range" min="0" max="360" id="range-number" value="0" oninput="showValue(this)">
+        <label for="range-number">0<sup>o</sup></label>
+      </div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dolorum mollitia quam pariatur veniam. Modi excepturi repudiandae delectus consectetur autem dolorem dignissimos magni aperiam hic! Assumenda vel culpa consequatur vitae? Suscipit atque qui iure officiis et, quod asperiores dolore tempore perspiciatis exercitationem ipsum debitis id totam tenetur vero earum odit animi recusandae fuga repellat similique hic ex neque. Iste, vero id temporibus magnam nihil beatae sequi laborum mollitia! Tempora ut quae hic soluta, ipsam veritatis necessitatibus repudiandae perspiciatis non inventore, quod vero consequuntur velit fuga sunt blanditiis ullam maxime quo rerum optio dolorum illum eius. Qui molestiae dolore ratione quos.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum amet eos praesentium consequuntur iure hic fugiat cumque voluptatum magnam, error numquam debitis unde nihil voluptas dolor. Impedit, exercitationem excepturi.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis, ad optio dolorum animi illo inventore quod voluptatem distinctio deleniti in, deserunt nostrum eligendi placeat minima porro harum itaque illum sint quae ipsum! Voluptatum ut minus hic aut maiores asperiores tenetur earum cum id. Temporibus, et unde? Animi adipisci necessitatibus minus non ad perspiciatis sit unde odit, vitae laboriosam dolorem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat cum deserunt libero rem eveniet nam?</p>
+    </section>
+  </main>
+  <script>
+    function showValue(el) {
+      let val = el.value;
+      let label = el.nextElementSibling;
+      // let par = el.parentElement.nextElementSibling;
+      let pars = document.getElementsByTagName('p');
+      Array.from(pars).forEach(par => {
+        par.style.transform = 'rotate(' + val + 'deg)'
+      });
+      label.innerHTML = val + '<sup>o</sup>';
+    }
+  </script>
+</body>
+</html>
