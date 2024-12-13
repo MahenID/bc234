@@ -31,8 +31,8 @@
     <h1>Daftar Belanja</h1>
   </header>
   <main>
-    <button type="button" class="btn-plus"> + </button>
     <ul id="list-shp"></ul>
+    <button type="button" class="btn-plus"> + </button>
   </main>
   <script>
     document
@@ -78,8 +78,17 @@
     function checkList(p) {
       let check = p.target;
       let classes = check.nextElementSibling.classList;
+      let list = check.parentElement;
+      let parent = document.getElementById('list-shp');
 
-      check.checked ? classes.add('strike') : classes.remove('strike');
+      if(check.checked) {
+        classes.add('strike');
+        parent.appendChild(list);
+      } else {
+        classes.remove('strike');
+        parent.insertBefore(list, parent.firstChild);
+      }
+
     }
   </script>
 </body>
