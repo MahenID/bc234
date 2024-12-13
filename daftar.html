@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Belanja</title>
+  <style>
+    #list-shp {
+      list-style-type: none;
+      padding: 0;
+    }
+    #list-shp li {
+      margin-bottom: 10px;
+    }
+    .list-item {
+      border: none;
+      border-bottom: 1px dotted #555;
+      width: 70%;
+      font-size: large;
+    }
+    input {
+      margin: 0 5px;
+    }
+    .strike {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daftar Belanja</h1>
+  </header>
+  <main>
+    <button type="button" class="btn-plus"> + </button>
+    <ul id="list-shp"></ul>
+  </main>
+  <script>
+    document
+      .querySelector('.btn-plus')
+      .addEventListener('click', addList);
+
+    addList();
+    
+    function addList() {
+      let list = document.createElement('li');
+
+      // checkbox
+      let check = document.createElement('input');
+      check.setAttribute('type', 'checkbox');
+      check.setAttribute('class', 'list-check');
+      check.addEventListener('change', checkList);
+  
+      // input text
+      let item = document.createElement('input');
+      item.setAttribute('type', 'text');
+      item.setAttribute('class', 'list-item');
+      item.addEventListener('change', addList);
+
+      // delete button
+      let del = document.createElement('button');
+      del.setAttribute('type', 'button');
+      del.setAttribute('class', 'btn-delete');
+      del.innerText = ' - ';
+      del.addEventListener('click', delList);
+
+      list.appendChild(check);
+      list.appendChild(item);
+      list.appendChild(del);
+      document.getElementById('list-shp').appendChild(list);
+
+      item.focus();
+    }
+
+    function delList(p) {
+      p.target.parentElement.remove();
+    }
+
+    function checkList(p) {
+      let check = p.target;
+      let classes = check.nextElementSibling.classList;
+
+      check.checked ? classes.add('strike') : classes.remove('strike');
+    }
+  </script>
+</body>
+</html>
