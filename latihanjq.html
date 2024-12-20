@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan jQuery</title>
+</head>
+<body>
+  <header>
+    <h1>Latihan jQuery</h1>
+  </header>
+  <main>
+    <h2>jQuery</h2>
+    <button id="btn-hide" type="button">Hide</button>
+    <button id="btn-show" type="button">Show</button>
+    <button id="btn-toggle" type="button">Show / Hide</button>
+    <p id="div-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque facilis rem nobis consequuntur ut delectus neque ratione distinctio ipsam. Eius et fugiat labore eveniet sequi, rerum enim alias blanditiis excepturi ab, at facere. Sit, corrupti mollitia? Quidem eaque obcaecati fugiat consequuntur quisquam quaerat provident eveniet velit, quod totam deserunt cum repudiandae dignissimos nesciunt mollitia debitis ab perferendis, eligendi ut veniam voluptatem facilis. Nihil in cum impedit consequuntur? Soluta doloribus cupiditate adipisci similique. Sapiente in ad illum necessitatibus aliquam tenetur illo fugiat vero, omnis ducimus culpa, beatae eius vel. Vero corrupti quos itaque cupiditate asperiores suscipit aspernatur labore repudiandae, est nulla? Aut.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, doloremque voluptates? Itaque impedit fuga rerum quisquam, culpa tempora natus, quod dignissimos ab dolore cumque fugiat sint voluptates reprehenderit cupiditate veniam.</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+
+      $('#div-info').hide();
+
+      $('#btn-hide').click(function(){
+        $('#div-info').slideUp();
+      });
+
+      $('#btn-show').click(function(){
+        $('#div-info').slideDown();
+      });
+
+      $('#btn-toggle').click(function(){
+        $('#div-info').slideToggle(200);
+      })
+    });
+  </script>
+</body>
+</html>
